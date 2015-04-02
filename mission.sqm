@@ -1991,7 +1991,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=226;
+		items=225;
 		class Item0
 		{
 			position[]={1920.6003,5.6022429,5720.1484};
@@ -4502,31 +4502,20 @@ class Mission
 		};
 		class Item222
 		{
-			position[]={4332.7627,177.3419,4363.356};
-			azimut=125.416;
-			id=378;
-			side="EMPTY";
-			vehicle="Land_Atm_01_F";
-			skill=0.60000002;
-			init="[this] call A3W_fnc_setupMissionATM";
-			description="DO NOT MODIFY IN EDITOR";
-		};
-		class Item223
-		{
 			position[]={1964.5372,3.30037,2738.1904};
 			azimut=34.453255;
-			id=379;
+			id=378;
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
 			init="[this] call A3W_fnc_setupMissionATM";
 			description="DO NOT MODIFY IN EDITOR";
 		};
-		class Item224
+		class Item223
 		{
 			position[]={2639.5081,10.659298,1228.0127};
 			azimut=55.389904;
-			id=380;
+			id=379;
 			side="EMPTY";
 			vehicle="B_Truck_01_box_F";
 			leader=1;
@@ -4535,11 +4524,11 @@ class Mission
 			init="this call A3W_fnc_setupSellTruck";
 			description="Sell Vehicle";
 		};
-		class Item225
+		class Item224
 		{
 			position[]={2417.6858,2.2540998,1102.2192};
 			azimut=434.6535;
-			id=381;
+			id=380;
 			side="EMPTY";
 			vehicle="O_Truck_03_ammo_F";
 			leader=1;
