@@ -377,7 +377,7 @@ class Mission
 					position[]={3755.5964,10.100374,7927.9624};
 					id=18;
 					side="WEST";
-					vehicle="B_diver_F";
+					vehicle="B_sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -422,7 +422,7 @@ class Mission
 					position[]={3760.947,12.951021,7927.9653};
 					id=22;
 					side="EAST";
-					vehicle="O_diver_F";
+					vehicle="O_sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -467,7 +467,7 @@ class Mission
 					position[]={3766.3406,14.611601,7927.9702};
 					id=26;
 					side="GUER";
-					vehicle="I_diver_F";
+					vehicle="I_Sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -794,7 +794,7 @@ class Mission
 					position[]={3755.6467,10.437235,7929.9424};
 					id=49;
 					side="WEST";
-					vehicle="B_diver_F";
+					vehicle="B_sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -839,7 +839,7 @@ class Mission
 					position[]={3760.9973,12.896072,7929.9453};
 					id=53;
 					side="EAST";
-					vehicle="O_diver_F";
+					vehicle="O_sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -884,7 +884,7 @@ class Mission
 					position[]={3766.3909,14.301968,7929.9502};
 					id=57;
 					side="GUER";
-					vehicle="I_diver_F";
+					vehicle="I_Sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -1064,7 +1064,7 @@ class Mission
 					position[]={3755.6467,10.77128,7931.998};
 					id=73;
 					side="WEST";
-					vehicle="B_diver_F";
+					vehicle="B_sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -1109,7 +1109,7 @@ class Mission
 					position[]={3760.9973,12.681689,7932.001};
 					id=77;
 					side="EAST";
-					vehicle="O_diver_F";
+					vehicle="O_sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -1154,7 +1154,7 @@ class Mission
 					position[]={3766.3909,14.054966,7932.0059};
 					id=81;
 					side="GUER";
-					vehicle="I_diver_F";
+					vehicle="I_Sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -1334,7 +1334,7 @@ class Mission
 					position[]={3755.6624,10.905907,7933.8901};
 					id=97;
 					side="WEST";
-					vehicle="B_diver_F";
+					vehicle="B_sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -1379,7 +1379,7 @@ class Mission
 					position[]={3761.0129,12.586769,7933.8931};
 					id=101;
 					side="EAST";
-					vehicle="O_diver_F";
+					vehicle="O_sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -1424,7 +1424,7 @@ class Mission
 					position[]={3766.4065,13.721199,7933.8979};
 					id=105;
 					side="GUER";
-					vehicle="I_diver_F";
+					vehicle="I_Sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -1604,7 +1604,7 @@ class Mission
 					position[]={3755.7126,11.014242,7935.8701};
 					id=121;
 					side="WEST";
-					vehicle="B_diver_F";
+					vehicle="B_sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -1649,7 +1649,7 @@ class Mission
 					position[]={3761.0632,12.382334,7935.873};
 					id=125;
 					side="EAST";
-					vehicle="O_diver_F";
+					vehicle="O_sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -1694,7 +1694,7 @@ class Mission
 					position[]={3766.4568,13.345161,7935.8779};
 					id=129;
 					side="GUER";
-					vehicle="I_diver_F";
+					vehicle="I_Sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -1874,7 +1874,7 @@ class Mission
 					position[]={3755.7126,10.957348,7937.9258};
 					id=145;
 					side="WEST";
-					vehicle="B_diver_F";
+					vehicle="B_sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -1919,7 +1919,7 @@ class Mission
 					position[]={3761.0632,12.229929,7937.9287};
 					id=149;
 					side="EAST";
-					vehicle="O_diver_F";
+					vehicle="O_sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -1964,7 +1964,7 @@ class Mission
 					position[]={3766.4568,13.049404,7937.9336};
 					id=153;
 					side="GUER";
-					vehicle="I_diver_F";
+					vehicle="I_Sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
@@ -2073,7 +2073,7 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={6367.1934,8.3726559,5308.3037};
+			position[]={6349.9438,8.0797739,5348.2026};
 			azimut=47.825333;
 			id=163;
 			side="EMPTY";
@@ -4540,7 +4540,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=123;
+		items=127;
 		class Item0
 		{
 			position[]={3037.7126,1.8398418,5962.104};
@@ -5528,6 +5528,34 @@ class Mission
 			a=30;
 			b=30;
 			angle=131.698;
+		};
+		class Item123
+		{
+			position[]={3769.7986,14.330806,7933.9741};
+			name="respawn_west";
+			type="Empty";
+			colorName="ColorWEST";
+		};
+		class Item124
+		{
+			position[]={3769.7996,14.672221,7932.2241};
+			name="respawn_east";
+			type="Empty";
+			colorName="ColorEAST";
+		};
+		class Item125
+		{
+			position[]={3769.7996,14.761467,7930.4819};
+			name="respawn_guerrila";
+			type="Empty";
+			colorName="ColorGUER";
+		};
+		class Item126
+		{
+			position[]={3769.7986,14.945469,7928.7368};
+			name="respawn_civilian";
+			type="Empty";
+			colorName="ColorCIV";
 		};
 	};
 };
