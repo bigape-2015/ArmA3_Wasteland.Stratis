@@ -25,8 +25,12 @@ else
 
 _unit allowFleeing 0;
 _unit setSkill _skill;
-_unit setSkill ["aimingAccuracy", (_unit skill "aimingAccuracy") * _accuracy];
-_unit setSkill ["courage", 1];
+_unit setSkill ["aimingShake", 0.9]; //since they won't use weapon rest
+_unit setSkill ["aimingSpeed", 0.8];//how fast they turn and/or aim
+_unit setSkill ["aimingAccuracy", 0.6]; //affects how quickly they work-out the correct lead on you
+_unit setSkill ["spotTime", 0.8]; //they'll react quicker
+_unit setSkill ["commanding", 0.8]; //share information within a group faster - only works for groups with a leader
+_unit setSkill ["courage", 0.8]; //override the other setting that sets this to 1.
 
 // Available skills are explained here: http://community.bistudio.com/wiki/AI_Sub-skills
 // Skill values are between 0 and 1
