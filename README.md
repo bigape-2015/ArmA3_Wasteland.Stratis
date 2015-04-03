@@ -1,4 +1,4 @@
-*Shizweak.Chernarus* by Shizweak.es
+*Shizweak.Stratis* by Shizweak.es
 ===================
 Modified by shizweak.es
 
@@ -7,22 +7,13 @@ This version is derived from the TOP Conquest A3 Wasteland mission file, for use
 Please read the notes regarding extDB/iniDB below if you intend to use this fork.
 
 
-*Wasteland.Chernarus* by Team Wasteland!
+*Wasteland.Stratis* by Team Wasteland!
 ===================
-Modified by TOPARMA.com
+Modified by shizweak.es
 
-We are looking for active coders to take over our mission to support community ideas further than what Team Wasteland has on it's current roadmap. TOParma is a new community that thrives off self-sustaining support. 
+ArmA 3 Wasteland is a harsh survival sandbox mission where 2 teams and independent players fight for survival.
 
-Notes about our fork:
-* We do not use iniDB, iniDB code may not be updated or merged. 
-* We use extDB, initially provided by @Torndeco.
-
-
-We are not a support team. We are a community that enjoys playing arma and saw fit to modify our own A3Wasteland mission file. 
-
-TOParma ArmA 3 Wasteland is a harsh survival sandbox mission where 2 teams and independent players fight for survival. Our main objective is to fight over a group of flags, which consist of 1-4 capture points.
-
-
+The mission is not ready yet, so for now it's just a placeholder :)
 
 *Team Wasteland* collaborators:
 
