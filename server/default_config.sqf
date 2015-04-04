@@ -57,7 +57,7 @@ A3W_moneySaving = 1;               // If playerSaving = 1, save player money amo
 A3W_combatAbortDelay = 60;         // If playerSaving = 1, delay in seconds for which to disable abort and respawn buttons after firing or being shot (0 = none)
 A3W_purchasedVehicleSaving = 1;    // Save vehicles purchased at vehicle stores between server restarts (0 = no, 1 = yes)
 A3W_missionVehicleSaving = 1;      // Save vehicles captured from missions between server restarts (0 = no, 1 = yes)
-A3W_baseSaving = 1;                // Save locked base parts between server restarts (0 = no, 1 = yes)
+A3W_baseSaving = 0;                // Save locked base parts between server restarts (0 = no, 1 = yes)
 A3W_boxSaving = 1;                 // Save locked weapon crates and their contents between server restarts (0 = no, 1 = yes)
 A3W_staticWeaponSaving = 1;        // Save locked static weapons and their magazines between server restarts (0 = no, 1 = yes)
 A3W_warchestSaving = 1;            // Save warchest objects deployed by players between server restarts (0 = no, 1 = yes)
@@ -87,7 +87,7 @@ A3W_vehicleQuantity = 150;         // Approximate number of land vehicles to be 
 A3W_boatSpawning = 1;              // If serverSpawning = 1, spawn boats at marked areas near coasts (0 = no, 1 = yes)
 A3W_heliSpawning = 1;              // If serverSpawning = 1, spawn helicopters in some towns and airfields (0 = no, 1 = yes)
 A3W_planeSpawning = 0;             // If serverSpawning = 1, spawn planes at some airfields (0 = no, 1 = yes)
-A3W_boxSpawning = 0.5;               // If serverSpawning = 1, spawn weapon crates in up to configs value, e.g. 1 = all towns, 0.5 = 50 percent chance
+A3W_boxSpawning = 1;               // If serverSpawning = 1, spawn weapon crates in up to configs value, e.g. 1 = all towns, 0.5 = 50 percent chance
 A3W_baseBuilding = 0;              // If serverSpawning = 1, spawn base parts in towns (0 = no, 1 = yes)
 A3W_essentialsSpawning = 1;			// If serverSpawning = 1, spawn essential items (food, water and ammo crates) in towns (0 = no, 1 = yes. If A3W_baseBuilding = 1, then essentialsSpawning = 1;)
 
