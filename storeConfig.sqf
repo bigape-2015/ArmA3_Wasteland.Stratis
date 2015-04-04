@@ -82,13 +82,13 @@ lmgArray = compileFinal str
 launcherArray = compileFinal str
 [
 	["RPG-42 Alamut", "launch_RPG32_F", 400],
-	["PCML", "launch_NLAW_F", 600],
-	["Titan MPRL Compact (Tan)", "launch_Titan_short_F", 500],
-	["Titan MPRL Compact (Brown)", "launch_O_Titan_short_F", 500],
-	["Titan MPRL Compact (Olive)", "launch_I_Titan_short_F", 500],
-	["Titan MPRL AA (Desert)", "launch_Titan_F", 600],
-	["Titan MPRL AA (Hex)", "launch_O_Titan_F", 600],
-	["Titan MPRL AA (Digi)", "launch_I_Titan_F", 600]
+	["PCML", "launch_NLAW_F", 1500],
+	["Titan MPRL Compact (Tan)", "launch_Titan_short_F", 3000],
+	["Titan MPRL Compact (Brown)", "launch_O_Titan_short_F", 3000],
+	["Titan MPRL Compact (Olive)", "launch_I_Titan_short_F", 3000],
+	["Titan MPRL AA (Desert)", "launch_Titan_F", 3000],
+	["Titan MPRL AA (Hex)", "launch_O_Titan_F", 3000],
+	["Titan MPRL AA (Digi)", "launch_I_Titan_F", 3000]
 ];
 
 allGunStoreFirearms = compileFinal str (call pistolArray + call smgArray + call rifleArray + call lmgArray + call launcherArray);
@@ -179,10 +179,10 @@ ammoArray = compileFinal str
 	["12.7mm 5Rnd Armor-Piercing Mag", "5Rnd_127x108_APDS_Mag", 60],
 	["RPG-42 Anti-Tank Rocket", "RPG32_F", 250],              // Direct damage: high      | Splash damage: low    | Guidance: none
 	["RPG-42 High-Explosive Rocket", "RPG32_HE_F", 250],      // Direct damage: medium    | Splash damage: medium | Guidance: none
-	["PCML Anti-Tank Missile", "NLAW_F", 400],                // Direct damage: very high | Splash damage: low    | Guidance: laser, ground vehicles
-	["Titan Anti-Tank Missile", "Titan_AT", 350],             // Direct damage: high      | Splash damage: low    | Guidance: mouse, laser, ground vehicles
-	["Titan Anti-Personnel Missile", "Titan_AP", 350],        // Direct damage: low       | Splash damage: high   | Guidance: mouse, laser
-	["Titan Anti-Air Missile", "Titan_AA", 350],              // Direct damage: low       | Splash damage: medium | Guidance: aircraft
+	["PCML Anti-Tank Missile", "NLAW_F", 500],                // Direct damage: very high | Splash damage: low    | Guidance: laser, ground vehicles
+	["Titan Anti-Tank Missile", "Titan_AT", 1000],             // Direct damage: high      | Splash damage: low    | Guidance: mouse, laser, ground vehicles
+	["Titan Anti-Personnel Missile", "Titan_AP", 1000],        // Direct damage: low       | Splash damage: high   | Guidance: mouse, laser
+	["Titan Anti-Air Missile", "Titan_AA", 1000],              // Direct damage: low       | Splash damage: medium | Guidance: aircraft
 	["40mm HE Grenade Round", "1Rnd_HE_Grenade_shell", 125],
 	["40mm 3Rnd HE Grenades", "3Rnd_HE_Grenade_shell", 250],
 	["40mm Smoke Round (White)", "1Rnd_Smoke_Grenade_shell", 50],
@@ -437,6 +437,8 @@ vestArray = compileFinal str
 	["Carrier Lite (Black)", "V_PlateCarrier1_blk", -1, "vest"],
 	["Carrier Rig (Green)", "V_PlateCarrier3_rgr", -1, "vest"],
 	["Carrier GL Rig (Green)", "V_PlateCarrierGL_rgr", -1, "vest"],
+	["CTRG Plate Carrier Rig Mk.1 (Light)", "V_PlateCarrierL_CTRG", -1, "vest"],
+	["CTRG Plate Carrier Rig Mk.2 (Heavy)", "V_PlateCarrierH_CTRG", -1, "vest"],
 	["GA Carrier Lite (Digi)", "V_PlateCarrierIA1_dgtl", -1, "vest"],
 	["GA Carrier Rig (Digi)", "V_PlateCarrierIA2_dgtl", -1, "vest"],
 	["GA Carrier GL Rig (Digi)", "V_PlateCarrierIAGL_dgtl", -1, "vest"],
@@ -495,9 +497,9 @@ backpackArray = compileFinal str
 
 genItemArray = compileFinal str
 [
-	["Quadrotor UAV (NATO)", "B_UAV_01_backpack_F", 500, "backpack"],
-	["Quadrotor UAV (CSAT)", "O_UAV_01_backpack_F", 500, "backpack"],
-	["Quadrotor UAV (AAF)", "I_UAV_01_backpack_F", 500, "backpack"],
+	["Quadrotor UAV (NATO)", "B_UAV_01_backpack_F", 5000, "backpack"],
+	["Quadrotor UAV (CSAT)", "O_UAV_01_backpack_F", 5000, "backpack"],
+	["Quadrotor UAV (AAF)", "I_UAV_01_backpack_F", 5000, "backpack"],
 	["UAV Terminal (NATO)", "B_UavTerminal", 150, "gps"],
 	["UAV Terminal (CSAT)", "O_UavTerminal", 150, "gps"],
 	["UAV Terminal (AAF)", "I_UavTerminal", 150, "gps"],
@@ -561,7 +563,9 @@ genObjectsArray = compileFinal str
 	["Military Cargo Tower", "Land_Cargo_Tower_V1_F", 10000, "object"],
 	["Concrete Ramp", "Land_RampConcrete_F", 350, "object"],
 	["Concrete Ramp (High)", "Land_RampConcreteHigh_F", 500, "object"],
-	["Scaffolding", "Land_Scaffolding_F", 250, "object"]
+	//["Scaffolding", "Land_Scaffolding_F", 250, "object"]
+	["Land Pier (TOParma.com)", "Land_Pier_F", 250000, "object"],
+	["Fuel Station (TOParma.com)", "Land_FuelStation_Feed_F", 10000, "object"]
 ];
 
 allGenStoreVanillaItems = compileFinal str (call genItemArray + call genObjectsArray + call allStoreGear);
@@ -598,29 +602,29 @@ landArray = compileFinal str
 	["HEMTT Fuel", "B_Truck_01_fuel_F", 9000, "vehicle"],
 	["HEMTT Medical", "B_Truck_01_medical_F", 10000, "vehicle"],
 	["HEMTT Repair", "B_Truck_01_Repair_F", 12500, "vehicle"],
-	["HEMTT Ammo", "B_Truck_01_ammo_F", 27500, "vehicle"],
+	// ["HEMTT Ammo", "B_Truck_01_ammo_F", 27500, "vehicle"],
 
-	["Tempest Device", "O_Truck_03_device_F", 4000, "vehicle"],
+	// ["Service Truck", "O_Truck_03_device_F", 5000, "vehicle"],
 	["Tempest Transport", "O_Truck_03_transport_F", 6000, "vehicle"],
 	["Tempest Covered", "O_Truck_03_covered_F", 7500, "vehicle"],
 	["Tempest Fuel", "O_Truck_03_fuel_F", 9000, "vehicle"],
 	["Tempest Medical", "O_Truck_03_medical_F", 10000, "vehicle"],
 	["Tempest Repair", "O_Truck_03_repair_F", 12500, "vehicle"],
-	["Tempest Ammo", "O_Truck_03_ammo_F", 27500, "vehicle"],
+	// ["Tempest Ammo", "O_Truck_03_ammo_F", 27500, "vehicle"],
 
 	["Zamak Transport", "I_Truck_02_transport_F", 4000, "vehicle"],
 	["Zamak Covered", "I_Truck_02_covered_F", 5000, "vehicle"],
 	["Zamak Fuel", "I_Truck_02_fuel_F", 7500, "vehicle"],
 	["Zamak Medical", "I_Truck_02_medical_F", 9000, "vehicle"],
 	["Zamak Repair", "I_Truck_02_box_F", 10000, "vehicle"],
-	["Zamak Ammo", "I_Truck_02_ammo_F", 25000, "vehicle"],
+	// ["Zamak Ammo", "I_Truck_02_ammo_F", 25000, "vehicle"],
 
-	["UGV Stomper (NATO)", "B_UGV_01_F", 2500, "vehicle"],
-	["UGV Stomper RCWS (NATO)", "B_UGV_01_rcws_F", 15000, "vehicle"],
-	["UGV Stomper (AAF)", "I_UGV_01_F", 2500, "vehicle"],
-	["UGV Stomper RCWS (AAF)", "I_UGV_01_rcws_F", 15000, "vehicle"],
-	["UGV Saif (CSAT)", "O_UGV_01_F", 2500, "vehicle"],
-	["UGV Saif RCWS (CSAT)", "O_UGV_01_rcws_F", 15000, "vehicle"]
+	["UGV Stomper (NATO)", "B_UGV_01_F", 25000, "vehicle"],
+	["UGV Stomper RCWS (NATO)", "B_UGV_01_rcws_F", 45000, "vehicle"],
+	["UGV Stomper (AAF)", "I_UGV_01_F", 25000, "vehicle"],
+	["UGV Stomper RCWS (AAF)", "I_UGV_01_rcws_F", 45000, "vehicle"],
+	["UGV Saif (CSAT)", "O_UGV_01_F", 25000, "vehicle"],
+	["UGV Saif RCWS (CSAT)", "O_UGV_01_rcws_F", 45000, "vehicle"]
 ];
 
 armoredArray = compileFinal str
@@ -680,23 +684,23 @@ helicoptersArray = compileFinal str
 	["PO-30 Orca (Armed, Black)", "O_Heli_Light_02_v2_F", 30000, "vehicle"], // Armed Ka-60 with orca paintjob
 	["PO-30 Orca (Armed, Hex)", "O_Heli_Light_02_F", 35000, "vehicle"], // Armed Ka-60
 	["WY-55 Hellcat (Armed)", "I_Heli_light_03_F", 40000, "vehicle"], // Armed AW159
-	["AH-99 Blackfoot", "B_Heli_Attack_01_F", 50000, "vehicle"], // RAH-66 with gunner
-	["Mi-48 Kajman (Hex)", "O_Heli_Attack_02_F", 60000, "vehicle"], // Mi-28 with gunner
-	["Mi-48 Kajman (Black)", "O_Heli_Attack_02_black_F", 60000, "vehicle"] // Mi-28 with gunner (black camo)
+	["AH-99 Blackfoot", "B_Heli_Attack_01_F", 75000, "vehicle"], // RAH-66 with gunner
+	["Mi-48 Kajman (Hex)", "O_Heli_Attack_02_F", 85000, "vehicle"], // Mi-28 with gunner
+	["Mi-48 Kajman (Black)", "O_Heli_Attack_02_black_F", 85000, "vehicle"] // Mi-28 with gunner (black camo)
 ];
 
 planesArray = compileFinal str
 [
-	["A-143 Buzzard AA", "I_Plane_Fighter_03_AA_F", 40000, "vehicle"],
-	["A-143 Buzzard CAS", "I_Plane_Fighter_03_CAS_F", 45000, "vehicle"],
-	["A-164 Wipeout CAS", "B_Plane_CAS_01_F", 60000, "vehicle"],
-	["To-199 Neophron CAS", "O_Plane_CAS_02_F", 60000, "vehicle"],
-	["MQ4A Greyhawk ATGM UAV", "B_UAV_02_F", 20000, "vehicle"],
-	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_CAS_F", 10000, "vehicle"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than ATGMs
-	["K40 Ababil-3 ATGM UAV (CSAT)", "O_UAV_02_F", 20000, "vehicle"],
-	["K40 Ababil-3 Bomber UAV (CSAT)", "O_UAV_02_CAS_F", 10000, "vehicle"],
-	["K40 Ababil-3 ATGM UAV (AAF)", "I_UAV_02_F", 20000, "vehicle"],
-	["K40 Ababil-3 Bomber UAV (AAF)", "I_UAV_02_CAS_F", 10000, "vehicle"]
+	["A-143 Buzzard AA", "I_Plane_Fighter_03_AA_F", 120000, "vehicle"],
+	["A-143 Buzzard CAS", "I_Plane_Fighter_03_CAS_F", 120000, "vehicle"],
+	// ["A-164 Wipeout CAS", "B_Plane_CAS_01_F", 60000, "vehicle"],
+	// ["To-199 Neophron CAS", "O_Plane_CAS_02_F", 60000, "vehicle"],
+	["MQ4A Greyhawk ATGM UAV", "B_UAV_02_F", 65000, "vehicle"],
+	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_CAS_F", 40000, "vehicle"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than ATGMs
+	["K40 Ababil-3 ATGM UAV (CSAT)", "O_UAV_02_F", 65000, "vehicle"],
+	["K40 Ababil-3 Bomber UAV (CSAT)", "O_UAV_02_CAS_F", 40000, "vehicle"],
+	["K40 Ababil-3 ATGM UAV (AAF)", "I_UAV_02_F", 65000, "vehicle"],
+	["K40 Ababil-3 Bomber UAV (AAF)", "I_UAV_02_CAS_F", 40000, "vehicle"]
 ];
 
 boatsArray = compileFinal str
