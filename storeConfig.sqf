@@ -10,7 +10,7 @@
 // This tracks which store owner the client is interacting with
 currentOwnerName = "";
 
-// Gunstore Weapon List - Gun Store Base List
+// Gunstore Weapon List - Gun Store Base List updated
 // Text name, classname, buy cost
 
 pistolArray = compileFinal str
