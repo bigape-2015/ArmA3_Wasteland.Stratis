@@ -1,4 +1,4 @@
-// ******************************************************************************************
+﻿// ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Version: 1.0
@@ -17,12 +17,12 @@ private [
 
 _weapon = _this select 0;
 _amount = _this select 1;
-
+_attachments = [];
 _result = [];
 _allowed = [];
 
 // get compatible attachments using asdg getCompatibleAttachments
-_attachments = vehicleAddition call BIS_fnc_selectRandom;
+_attachments = vehicleAddition;
 
 // if amount parameter is greater than zero and
 // compatible attachments have been found
