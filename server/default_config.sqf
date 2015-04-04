@@ -37,7 +37,7 @@ A3W_vehiclePurchaseCooldown = 60;  // Number of seconds to wait before allowing 
 
 
 // Player settings
-A3W_startingMoney = 1500;           // Amount of money that players start with
+A3W_startingMoney = 2500;           // Amount of money that players start with
 A3W_unlimitedStamina = 1;          // Allow unlimited sprinting, jumping, etc. (0 = no, 1 = yes) - this also removes energy drinks from the mission
 A3W_bleedingTime = 100;             // Time in seconds for which to allow revive after a critical injury (minimum 10 seconds)
 
@@ -97,7 +97,7 @@ A3W_buildingLootWeapons = 0;       // Spawn weapon loot in all buildings (0 = no
 A3W_buildingLootSupplies = 1;      // Spawn supply loot (backpacks & player items) in all buildings (0 = no, 1 = yes)
 A3W_buildingLootChances = 25;      // Chance percentage that loot will spawn at each spot in a building (0 to 100)
 A3W_vehicleLoot = 3;               // Level of loot added to vehicles (0 = none, 1 = weapon OR items, 2 = weapon AND items, 3 = two weapons AND items) - 2 or 3 recommended if buildingLoot = 0
-A3W_vehicleLootAttachments = 1;		 // Amount of random compatible attachments to spawn for each weapon
+A3W_vehicleLootAttachments = 2;		 // Amount of random compatible attachments to spawn for each weapon
 
 // Territory settings
 A3W_territoryCaptureTime = 3*60;   // Time in seconds needed to capture a territory
