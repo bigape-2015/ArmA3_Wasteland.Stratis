@@ -18,6 +18,12 @@ diag_log "###################################";
 diag_log "##      Loading Static Bases     ##";
 diag_log "###################################";
 
-// Pythos Compound.sqf
-["bases\pythos-compound","Camp X-Ray"] execVM "addons\static_bases\loadStaticBase.sqf";
+_bases = [
+	["bases\pythos-compound"]
+];
 
+_loadBase = compile preprocessFileLineNumbers "addons\static_bases\loadStaticBase.sqf";
+
+for "_i" from 0 to ((count _bases)-1) step 1 do {
+	(_bases select _i) call _loadBase;
+};

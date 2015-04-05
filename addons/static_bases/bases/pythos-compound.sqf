@@ -14,8 +14,10 @@
   	  ["pythos-compound"] execVM "addons\static_bases\loadStaticBase.sqf";
 *************************************************************************/
 
-private ["_objects"];
+private ["_name","_midpoint","_objects"];
 
+_name = "Research Station";
+_midpoint = [7068.65,5922.16,1.38253];
 _objects = [
 	["Land_Pier_Box_F",[7131.26,6005.4,3.66714],-1.6544501],
 	["Land_Pier_Box_F",[7150.88,6005.98,4.60346],-1.6544501],
@@ -44,4 +46,4 @@ _objects = [
 	["Land_Bench_F",[7157.07,6000.28,4.25457],178.358]
 ];
 
-_objects
+[_name, _midpoint, _objects]

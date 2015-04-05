@@ -16,30 +16,32 @@
 *************************************************************************/
 
 _script = _this select 0;
-_baseName = _this select 1;
+
+_result = [];
+_result = call (compile (preprocessFileLineNumbers format ["addons\static_bases\%1.sqf",_script]));
+
+_baseName = _result select 0;
+_midPoint = _result select 1;
 
 _objects = [];
-_objects = call (compile (preprocessFileLineNumbers format ["addons\static_bases\%1.sqf",_script]));
+_objects = _result select 2;
 
 diag_log (format ["Loading 'addons\static_bases\%1.sqf'",_script]);
+
+_marker = createMarkerLocal [ format["static_base_%1",floor(random 1000)], _midPoint];
+_marker setMarkerShapeLocal "ICON";
+_marker setMarkerTypeLocal "o_inf";
+_marker setMarkerTextLocal _baseName;
+_marker setMarkerColorLocal "ColorCivilian";
+_marker setMarkerSizeLocal [0.5,0.5];
+_marker setMarkerDirLocal 270;
 
 for "_o" from 0 to ((count _objects)-1) step 1 do {
 	private ["_obj","_config","_marker"];
 
 	_config = _objects select _o;
 
-	if (_o == 0) then {
-		_marker = createMarkerLocal [ format["static_base_%1",floor(random 1000)], _config select 1];
-		_marker setMarkerShapeLocal "ICON";
-		_marker setMarkerTypeLocal "o_inf";
-		_marker setMarkerTextLocal _baseName;
-		_marker setMarkerColorLocal "ColorCivilian";
-		_marker setMarkerSizeLocal [0.5,0.5];
-		_marker setMarkerDirLocal 270;
-	};
-
 	_obj = createVehicle [ _config select 0, _config select 1, [], 0, "CAN_COLLIDE"];
-
 	_obj setDir (_config select 2);
 	_obj setPosATL (_config select 1);
 	_obj allowDamage false;
