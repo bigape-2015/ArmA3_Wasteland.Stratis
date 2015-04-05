@@ -19,7 +19,8 @@ diag_log "##      Loading Static Bases     ##";
 diag_log "###################################";
 
 _bases = [
-	["bases\pythos-compound"]
+	["bases\pythos-compound"],
+	["bases\ancient-cave"]
 ];
 
 _loadBase = compile preprocessFileLineNumbers "addons\static_bases\loadStaticBase.sqf";

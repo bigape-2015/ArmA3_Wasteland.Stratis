@@ -28,13 +28,15 @@ _objects = _result select 2;
 
 diag_log (format ["Loading 'addons\static_bases\%1.sqf'",_script]);
 
-_marker = createMarkerLocal [ format["static_base_%1",floor(random 1000)], _midPoint];
-_marker setMarkerShapeLocal "ICON";
-_marker setMarkerTypeLocal "o_inf";
-_marker setMarkerTextLocal _baseName;
-_marker setMarkerColorLocal "ColorCivilian";
-_marker setMarkerSizeLocal [0.5,0.5];
-_marker setMarkerDirLocal 270;
+if (count _midPoint > 0) then {
+	_marker = createMarkerLocal [ format["static_base_%1",floor(random 1000)], _midPoint];
+	_marker setMarkerShapeLocal "ICON";
+	_marker setMarkerTypeLocal "o_inf";
+	_marker setMarkerTextLocal _baseName;
+	_marker setMarkerColorLocal "ColorCivilian";
+	_marker setMarkerSizeLocal [0.5,0.5];
+	_marker setMarkerDirLocal 270;
+};
 
 for "_o" from 0 to ((count _objects)-1) step 1 do {
 	private ["_obj","_config","_marker"];
